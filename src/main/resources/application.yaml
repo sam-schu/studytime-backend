@@ -1,6 +1,11 @@
 ktor:
   application:
     modules:
-      - io.github.sam_schu.ApplicationKt.module
+      - io.github.sam_schu.ApplicationKt.mainModule
   deployment:
     port: 8080
+db:
+  driver: "org.postgresql.Driver"
+  url: $DB_URL
+  user: $DB_USER
+  password: $DB_PASSWORD

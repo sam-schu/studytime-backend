@@ -28,4 +28,6 @@ dependencies {
     implementation("io.ktor:ktor-server-config-yaml")
     testImplementation("io.ktor:ktor-server-test-host")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
+    implementation("org.ktorm:ktorm-core:4.1.1")
+    runtimeOnly("org.postgresql:postgresql:42.7.5")
 }
